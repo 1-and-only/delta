@@ -366,13 +366,18 @@ footer{
     }
 
     .button{
-        font-size: 1.4rem;
+        font-size: 1.5rem;
         padding:1rem 1rem 1rem 0;
     }
 
     .first-title{
         margin:0 10rem;
     }
+    
+    .logo{
+    width:4rem;
+    height:4rem;
+}
 
     .desc-content{
         margin:5rem;
