@@ -1,0 +1,427 @@
+@charset "utf-8";
+
+*{
+    margin:0;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family: 'Kosugi', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
+    width:100%;
+    font-size:10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+::selection{
+    background-color: rgba(255, 190, 111, 0.5);
+    color:white;
+}
+
+header{
+    position:fixed ;
+    display:flex;
+    padding:20px;
+    width:100%;
+    height:3vh;/*大丈夫だとおもう*/
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    z-index:5;
+    box-shadow:0 10px 25px 0 rgba(0, 0, 0, 0.3);
+}
+
+li{
+    float:left;
+    list-style: none;
+}
+
+body{
+    animation: fadeIn 2s ease 0s 1 normal;
+    -webkit-animation: fadeIn 2s ease 0s 1 normal;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+main{
+    width:100%;
+}
+
+footer{
+    background-color:rgb(49, 49, 49);
+    color:white;
+    height:30rem;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:5rem;
+}
+
+.pop-up {
+    opacity: 0;
+    transform: translate3d(0, 10vh, 0);
+}
+.pop-up.on {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition: 1s;
+}
+
+.orange{
+    color:#e6b632;
+}
+
+.header-logo{
+    font-size:3rem;
+    font-weight:600;
+    padding:1rem 2rem 1rem 0;
+}
+
+.logo{
+    width:6rem;
+    height:6rem;
+}
+
+.header-list{
+    justify-content:center;
+    align-items:center;
+}
+
+.language{
+    text-align:right;
+    width:15rem;
+    position:fixed ;
+    display:flex;
+    justify-content: center;
+    height:3vh;/*大丈夫だとおもう*/
+    align-items: center;
+    z-index:6;
+    top:2vh;
+    right:1vh;
+}
+
+.language a{
+    font-size:1.4rem;
+}
+
+.language p{
+    font-size:1.4rem;
+}
+
+.gray{
+    color:rgb(49, 49, 49)
+}
+
+.button{
+    font-size:2.4rem;
+    padding:1rem 5rem 1rem 0;
+    width:10rem;
+    color:rgb(49, 49, 49);
+}
+
+.oneSection{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+}
+
+#intro{
+    background-image: url(wallpaper-P.png);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    border-bottom-left-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+    height:100vh;/*大丈夫*/
+}
+
+.content{
+    margin:0 auto;
+}
+
+.sentence{
+    width:100%;
+    display:flex;
+    flex-direction:row;
+}
+
+.second{
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+.left{
+    width:50%;
+}
+
+.right{
+    width:40%;
+}
+
+.photoHere{
+    border-radius: 5rem;
+    background-color:aquamarine;
+    padding-top:90%;
+    width:100%;
+    margin:auto;
+}
+
+.first-title{
+    margin:0 20rem;
+}
+
+.title{
+    margin:15rem 0 0 20rem;
+}
+
+.top-title{
+    font-size:15rem;
+    color:white;
+    margin-top:30vh;/*大丈夫*/
+}
+
+.top-content{
+    font-size:3rem;
+    color:white;
+
+}
+
+.E-title{
+    width:100%;
+}
+
+.J-title{
+    width:100%;
+}
+
+.E-title p{
+    font-size:2rem;
+    color:#e6b632;
+}
+
+.J-title p{
+    font-size:4rem;
+}
+
+.desc-content{
+    margin:5rem 5rem 0 20rem;
+    font-size:1.7rem;
+    line-height:2;
+}
+
+.one-person{
+    width:40vw;
+    display:flex;
+    flex-direction:row;
+    margin-top:5rem;
+}
+
+.left-part{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right-part{
+    width:30%;
+}
+
+.photo-part{
+    height:80%;
+    width:90%;
+    background-image: url(wallpaper-P.png);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    border-radius:3rem;
+}
+
+.name-part p{
+    font-size:3rem;
+    line-height:2;
+}
+
+.desc{
+    padding:20rem 3rem;
+}
+
+.desc p{
+    font-size:1.7rem;
+}
+
+.one-game{
+    width:40vw;
+    display: flex;
+    flex-direction: column;
+    margin:4rem auto;
+}
+
+.game-thumb{
+    width:90%;
+    height:20vw;
+    background-image: url(wallpaper-P.png);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    border-radius:3rem;
+    margin:0 auto;
+}
+
+.Sharou{
+    background-image: url(sharou-thumb.png);
+}
+
+.game-title{
+    margin:1.5rem auto 0.5rem;
+    font-size:3rem;
+}
+
+.game-desc{
+    margin:0.5rem auto 0;
+    width:80%;
+    font-size:1.7rem;
+}
+
+
+
+
+
+
+
+
+
+
+.footer-btns{
+    display: flex;
+    flex-direction: row;
+    font-size: 1.7rem;
+    margin-top:3rem;
+}
+
+.footer-btns a{
+    margin:0.4rem;
+    color:white;
+}
+
+.footer-menu {
+    text-align: center;
+    width:30vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-contact{
+    text-align: center;
+    width:30vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-title{
+    font-size:2.5rem;
+    margin:1.5rem;
+}
+
+
+/*-----------------半画面のsize------------------------*/
+@media (max-width:800px){
+    html{
+        font-size: 8px;
+    }
+
+    .title{
+        margin:15rem 0 0 10rem;
+    }
+
+    .first-title{
+        margin:0 15rem;
+    }
+
+    .desc-content{
+        margin:5rem 0 0 10rem;
+    }
+}
+
+/*-----------------smartphoneのsize------------------------*/
+@media (max-width:600px){
+    html{
+        font-size: 7px;
+    }
+
+    .title{
+        margin:15rem 0 0 7rem;
+    }
+
+    .button{
+        font-size: 2rem;
+        padding:1rem 3rem 1rem 0;
+    }
+
+    .first-title{
+        margin:0 10rem;
+    }
+
+    .desc-content{
+        margin:5rem;
+    }
+
+    .sentence{
+        width:100%;
+        display:flex;
+        flex-direction:column;
+    }
+
+    .second{
+        margin-top:5rem;
+    }
+
+    .right{
+        width:90%;
+    }
+
+    .left{
+        width:90%;
+    }
+
+    .one-person{
+        width:80vw;
+        margin:0 auto;
+    }
+
+    .left-part{
+        margin-left:5rem;
+    }
+
+    .one-game{
+        width:90vw;
+    }
+
+    .game-thumb{
+        height:40vw;
+    }
+
+    .language{
+        text-align:right;
+        width:5rem;
+        position:fixed ;
+        display:flex;
+        height:3vh;/*大丈夫だとおもう*/
+        align-items: center;
+        z-index:6;
+        top:2vh;
+        right:1vh;
+    }
+}
