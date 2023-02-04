@@ -61,7 +61,7 @@ main{
 footer{
     background-color:rgb(49, 49, 49);
     color:white;
-    height:30rem;
+    height:40rem;
     width:100%;
     display: flex;
     flex-direction: column;
@@ -309,6 +309,7 @@ footer{
     flex-direction: row;
     font-size: 1.7rem;
     margin-top:3rem;
+    margin-bottom:3rem;
 }
 
 .footer-btns a{
